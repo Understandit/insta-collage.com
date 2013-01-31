@@ -1,0 +1,21 @@
+<div> 
+  <ul class="insta-container">
+    <li ng-repeat="instagram in instagrams" class="position slide-{{$index}}" ng-class="{visible: showSlides, focus: $index == activeSlideIndex}" style="z-index: {{instagram.z_index}};">
+      <div class="rotation rotation-{{instagram.rotation_index}}">
+        <div class="size size-{{instagram.size_index}}">
+          <div class="design">
+            <img ng-src="{{instagram.images.standard_resolution.url}}" />
+            <div class="user-info">
+              <span class="user">@{{instagram.user.username}} ({{instagram.user.full_name}})</span>
+              <span class="caption">{{instagram.caption.text}}</span>
+              <span class="created-time">{{instagram.created_time | timeago}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="info">
+  <h2>#{{tag}}</h2>
+</div>
