@@ -1,3 +1,6 @@
+@res_height: 600px;
+@res_width: 800px;
+
 body {
   margin: 0;
   padding: 0;
@@ -5,6 +8,9 @@ body {
   font-family: "omnes-pro",'helvetica neue',arial, sans-serif;
   font-size: 16px;
   overflow: hidden;
+  width: @res_width;
+  height: @res_height;
+  position: relative;
 }
 
 #connect-button {
@@ -100,8 +106,8 @@ ul.insta-container {
     .size {
       -webkit-transition: -webkit-transform 0.5s ease-in-out 0s;
       -webkit-transform-origin: 0 0;
-      width: 612px;
-      height: 612px;
+      width: (@res_height * 0.5);
+      height: (@res_height * 0.5);
 
       &.size-1 {
         -webkit-transform: scale(0.40);
@@ -136,8 +142,8 @@ ul.insta-container {
     }
 
     .design {
-      width: 612px;
-      height: 612px;
+      width: (@res_height * 0.5);
+      height: (@res_height * 0.5);
       -webkit-box-shadow: 0px 2px 8px rgba(0,0,0,0.6);
       padding: 10px;
       background-color: #fff;
@@ -152,82 +158,86 @@ ul.insta-container {
     /* Slides positon */
     &.visible {
       &.slide-12 {
-        -webkit-transform: translate3d(10px, 25px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.05 * @res_width), (0.05 * @res_height), 0px) rotateX(0deg);
       }
       
       &.slide-1 {
-        -webkit-transform: translate3d(300px, 15px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.20 * @res_width), (0.05 * @res_height), 0px) rotateX(0deg);
       }
       
       &.slide-15 {
-        -webkit-transform: translate3d(645px, 20px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.35 * @res_width), (0.05 * @res_height), 0px) rotateX(0deg);
       }
       
       &.slide-8 {
-        -webkit-transform: translate3d(950px, 5px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.50 * @res_width), (0.05 * @res_height), 0px) rotateX(0deg);
       }
       
       &.slide-7 {
-        -webkit-transform: translate3d(1130px, 25px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.65 * @res_width), (0.05 * @res_height), 0px) rotateX(0deg);
       }
       
       &.slide-5 {
-        -webkit-transform: translate3d(1470px, 12px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.80 * @res_width), (0.05 * @res_height), 0px) rotateX(0deg);
       }
+
+// row 2
       
       &.slide-6 {
-        -webkit-transform: translate3d(5px, 330px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.05 * @res_width), (0.40 * @res_height), 0px) rotateX(0deg);
       }
       
       &.slide-4 {
-        -webkit-transform: translate3d(310px, 350px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.20 * @res_width), (0.40 * @res_height), 0px) rotateX(0deg);
       }
       
       &.slide-11 {
-        -webkit-transform: translate3d(650px, 310px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.35 * @res_width), (0.40 * @res_height), 0px) rotateX(0deg);
       }
       
       &.slide-9 {
-        -webkit-transform: translate3d(966px, 342px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.50 * @res_width), (0.40 * @res_height), 0px) rotateX(0deg);
       }
       
       &.slide-10 {
-        -webkit-transform: translate3d(1292px, 344px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.65 * @res_width), (0.40 * @res_height), 0px) rotateX(0deg);
       }
       
       &.slide-2 {
-        -webkit-transform: translate3d(1610px, 335px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.80 * @res_width), (0.40 * @res_height), 0px) rotateX(0deg);
       }
       
+// row 3
+
       &.slide-17 {
-        -webkit-transform: translate3d(500px, 480px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.20 * @res_width), (0.70 * @res_height), 0px) rotateX(0deg);
       }
       
       &.slide-13 {
-        -webkit-transform: translate3d(1120px, 240px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.35 * @res_width), (0.70 * @res_height), 0px) rotateX(0deg);
       }
       
       &.slide-3  {
-        -webkit-transform: translate3d(644px, 670px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.50 * @res_width), (0.70 * @res_height), 0px) rotateX(0deg);
       }
       
       &.slide-0 {
-        -webkit-transform: translate3d(957px, 655px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.65 * @res_width), (0.70 * @res_height), 0px) rotateX(0deg);
       }
       
       &.slide-16 {
-        -webkit-transform: translate3d(1288px, 680px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.80 * @res_width), (0.70 * @res_height), 0px) rotateX(0deg);
       }
       
       &.slide-14 {
-        -webkit-transform: translate3d(1622px, 664px, 0px) rotateX(0deg);
+        -webkit-transform: translate3d((0.90 * @res_width), (0.70 * @res_height), 0px) rotateX(0deg);
       }
           
       
       /* Active image */
       &.focus {
         z-index: 1000!important;
-        -webkit-transform: translate3d(501px, 81px, 0px);
+        -webkit-transform: translate3d((@res_width / 2 - (0.5 * 0.5 * @res_height * 1.5)), (@res_height / 2 - (0.5 * 0.5 * @res_height * 1.5)), 0px);
         .rotation {
           -webkit-transform: rotateZ(3deg);
         }
@@ -261,7 +271,7 @@ ul.insta-container {
 
 /* Info */
 .info {
-  -webkit-transform: translate3d(80px, 900px, 0px);
+  -webkit-transform: translate3d(80px, (@res_height - 160px), 0px);
   z-index: 15;
   list-style: none;
   position: absolute;

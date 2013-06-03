@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf8">
   <title>Welcome to instacollage</title>
-  <meta name="viewport" content="width=1920">
   
   <link rel="stylesheet/less" href="assets/style.less" type="text/css">
   <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
@@ -31,5 +30,11 @@
     })();
   </script>
   
+<script>
+less.modifyVars({
+  '@res_height': $(window).height() + 'px',
+  '@res_width':  $(window).width()  + 'px'
+});
+</script>
 </body>
 </html>
