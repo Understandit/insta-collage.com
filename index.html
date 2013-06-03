@@ -31,11 +31,15 @@
     })();
   </script>
   
-<script>
-less.modifyVars({
-  '@res_height': $(window).height() + 'px',
-  '@res_width':  $(window).width()  + 'px'
-});
-</script>
+  <script>
+    function respond() {
+      less.modifyVars({
+        '@res_height': $(window).height() + 'px',
+        '@res_width':  $(window).width()  + 'px'
+      });
+    }
+    $(window).on('resize', function() {respond();});
+    respond();
+  </script>
 </body>
 </html>
