@@ -1,0 +1,4 @@
+window.InstaCollageConfig = {
+  client_id: 'your instagram app client id',
+  redirect_uri: 'your instagram app redirect uri'
+};
